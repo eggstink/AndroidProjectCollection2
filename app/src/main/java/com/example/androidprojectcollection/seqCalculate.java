@@ -1,39 +1,29 @@
 package com.example.androidprojectcollection;
+
+
 import java.util.Stack;
 
-public class Calculate {
+public class seqCalculate {
 
     private Stack<Double> numbers;
     private Stack<Character> operations;
     private StringBuilder currentNumber;
-    private StringBuilder currentNumberSeq;
-    private Stack<Double>  numbersSeq;
-
-    private Stack<Character> operationsSeq;
-
     public String toCalc;
-    boolean is2Nums;
 
-    public Calculate(String toCalc) {
+    public seqCalculate(String toCalc) {
         numbers = new Stack<>();
         operations = new Stack<>();
         currentNumber = new StringBuilder();
-        numbersSeq = new Stack<>();
-        operationsSeq = new Stack<>();
-        currentNumberSeq = new StringBuilder();
-        this.is2Nums = false;
         this.toCalc=toCalc;
     }
 
     public void appendDigit(int digit) {
         currentNumber.append(digit);
-        currentNumberSeq.append(digit);
     }
 
     public void appendDecimalPoint() {
         if (!currentNumber.toString().contains(".")) {
             currentNumber.append(".");
-            currentNumberSeq.append(".");
         }
     }
 
@@ -91,14 +81,12 @@ public class Calculate {
     }
 
     public void performOperation(char operation) {
-        if(currentNumber.length()>=2){
-            is2Nums = true;
-        }
+
         if (currentNumber.length() > 0) {
             numbers.push(Double.parseDouble(currentNumber.toString()));
             currentNumber.setLength(0);
         }
-        if (!operations.isEmpty() && precedence(operations.peek()) >= precedence(operation)){
+        if (!operations.isEmpty()){
             evaluateStackTop();
         }
         operations.push(operation);
@@ -106,6 +94,8 @@ public class Calculate {
 
     public double evaluate() {
         builder();
+
+
         if (currentNumber.length() > 0) {
             numbers.push(Double.parseDouble(currentNumber.toString()));
             currentNumber.setLength(0);
@@ -135,15 +125,5 @@ public class Calculate {
                 break;
         }
         numbers.push(result);
-    }
-
-    private int precedence(char op) {
-        if (op == '*' || op == '/') {
-            return 2;
-        } else if (op == '+' || op == '-') {
-            return 1;
-        } else {
-            return 0;
-        }
     }
 }

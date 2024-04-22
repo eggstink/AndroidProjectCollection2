@@ -2,8 +2,6 @@ package com.example.androidprojectcollection;
 
 
 
-import static java.sql.Types.NULL;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -12,8 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Stack;
+
 
 public class calculator_exercise extends AppCompatActivity {
+
     Button btn1;
     Button btn2;
     Button btn3;
@@ -31,117 +32,172 @@ public class calculator_exercise extends AppCompatActivity {
     Button btn15;
     Button btn16;
     TextView txtview1;
-    String a;
-    String b;
-    double A;
-    double B;
-    double c;
+    TextView txtview2;
+    String toSolve;
 
-    boolean isTimes;
-    boolean isPlus;
-    boolean isDivide;
-    boolean isMinus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_exercise);
-        txtview1 = (TextView) findViewById(R.id.tvDisplay);
-        btn1 = (Button)findViewById(R.id.btnNum1);
+        txtview1 = (TextView) findViewById(R.id.tvNum);
+        txtview2 = (TextView) findViewById(R.id.tvString);
+        btn1 = (Button)findViewById(R.id.btnOne);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("1");
+                txtview2.append("1");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn2 = (Button)findViewById(R.id.btnNum2);
+        btn2 = (Button)findViewById(R.id.btn2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("2");
+                txtview2.append("2");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn3 = (Button)findViewById(R.id.btnNum3);
+        btn3 = (Button)findViewById(R.id.btn3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("3");
+                txtview2.append("3");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn4 = (Button)findViewById(R.id.btnNum4);
+        btn4 = (Button)findViewById(R.id.btn4);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("4");
+                txtview2.append("4");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn5 = (Button)findViewById(R.id.btnNum5);
+        btn5 = (Button)findViewById(R.id.btn5);
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("5");
+                txtview2.append("5");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn6 = (Button)findViewById(R.id.btnNum6);
+        btn6 = (Button)findViewById(R.id.btn6);
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("6");
+                txtview2.append("6");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn7 = (Button)findViewById(R.id.btnNum7);
+        btn7 = (Button)findViewById(R.id.btn7);
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("7");
+                txtview2.append("7");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn8 = (Button)findViewById(R.id.btnNum8);
+        btn8 = (Button)findViewById(R.id.btn8);
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("8");
+                txtview2.append("8");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn9 = (Button)findViewById(R.id.btnNum9);
+        btn9 = (Button)findViewById(R.id.btn9);
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("9");
+                txtview2.append("9");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn10 = (Button)findViewById(R.id.btnNum0);
+        btn10 = (Button)findViewById(R.id.btn0);
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtview1.append("0");
+                txtview2.append("0");
+
+                String toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                seqCalculate seqcalculate = new seqCalculate(toSolve);
+                if(calculate.is2Nums=true){
+                    txtview1.setText(Double.toString(seqcalculate.evaluate()));
+                }
             }
         });
 
-        btn11 = (Button)findViewById(R.id.btnTimes);
+        btn11 = (Button)findViewById(R.id.btnMultiply);
         btn11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isDivide = false;
-                isTimes = true;
-                isMinus = false;
-                isPlus = false;
-                if(A!=NULL){
-                    b = txtview1.getText().toString();
-                    B = Double.parseDouble(b);
-                }else{
-                    a = txtview1.getText().toString();
-                    A = Double.parseDouble(a);
-                }
-                txtview1.setText("");
+                txtview2.append("*");
+
+
             }
         });
 
@@ -149,39 +205,18 @@ public class calculator_exercise extends AppCompatActivity {
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isDivide = true;
-                isTimes = false;
-                isMinus = false;
-                isPlus = false;
+                txtview2.append("/");
 
-                if(A!=NULL){
-                    b = txtview1.getText().toString();
-                    B = Double.parseDouble(b);
-                }else{
-                    a = txtview1.getText().toString();
-                    A = Double.parseDouble(a);
-                }
-                txtview1.setText("");
+
             }
         });
 
-        btn13 = (Button)findViewById(R.id.btnPlus);
+        btn13 = (Button)findViewById(R.id.btnAddition);
         btn13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isDivide = false;
-                isTimes = false;
-                isMinus = false;
-                isPlus = true;
+                txtview2.append("+");
 
-                if(A!=NULL){
-                    b = txtview1.getText().toString();
-                    B = Double.parseDouble(b);
-                }else{
-                    a = txtview1.getText().toString();
-                    A = Double.parseDouble(a);
-                }
-                txtview1.setText("");
             }
         });
 
@@ -189,41 +224,27 @@ public class calculator_exercise extends AppCompatActivity {
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isDivide = false;
-                isTimes = false;
-                isMinus = true;
-                isPlus = false;
+                txtview2.append("-");
 
-                if(A!=NULL){
-                    b = txtview1.getText().toString();
-                    B = Double.parseDouble(b);
-                }else{
-                    a = txtview1.getText().toString();
-                    A = Double.parseDouble(a);
-                }
-
-                txtview1.setText("");
             }
         });
 
-        btn12 = (Button)findViewById(R.id.btnNumeq);
+        btn12 = (Button)findViewById(R.id.btnEquals);
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isPlus==true){
-                    c = A + B;
-                    txtview1.setText("" + c);
-                } else if (isDivide==true) {
-                    c = A / B;
-                    txtview1.setText("" + c);
-                } else if (isTimes==true) {
-                    c = A * B;
-                    txtview1.setText("" + c);
-                } else if (isMinus==true) {
-                    c = A - B;
-                    txtview1.setText("" + c);
-                }
+                toSolve = txtview2.getText().toString();
+                Calculate calculate = new Calculate(toSolve);
+                txtview1.setText(Double.toString(calculate.evaluate()));
+            }
+        });
 
+        btn13 = (Button)findViewById(R.id.btnClear);
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtview1.setText("");
+                txtview2.setText("");
             }
         });
     }

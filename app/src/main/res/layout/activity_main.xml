@@ -6,57 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnLayoutActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="64dp"
-        android:text="Open Layout Activity"
-        app:layout_constraintBottom_toTopOf="@+id/btnButtonExercise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <Button
-        android:id="@+id/btnButtonExercise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="70dp"
-        android:text="Open Button Exercise"
-        app:layout_constraintBottom_toTopOf="@+id/btnCalculator"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLayoutActivity" />
+        <Button
+            android:id="@+id/btnLayoutActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Layout Activity" />
 
-    <Button
-        android:id="@+id/btnCalculator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="58dp"
-        android:text="Open Calculator Exercise"
-        app:layout_constraintBottom_toTopOf="@+id/btnIDK"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnButtonExercise" />
+        <Button
+            android:id="@+id/btnButtonExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Button Exercise" />
 
-    <Button
-        android:id="@+id/btnIDK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="281dp"
-        android:text="&quot;????????&quot;"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
+        <Button
+            android:id="@+id/btnCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Calculator Exercise" />
+
+        <Button
+            android:id="@+id/btnPassingIntents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Passing Intents" />
+
+        <Button
+            android:id="@+id/btnFragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragments" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match 3 " />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Midterm" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

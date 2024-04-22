@@ -248,7 +248,7 @@
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/btnIDK"
+                    android:id="@+id/btnPassingIntents"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
