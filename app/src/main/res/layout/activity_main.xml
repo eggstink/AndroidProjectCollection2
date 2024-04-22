@@ -32,6 +32,18 @@
             android:text="Open Calculator Exercise" />
 
         <Button
+            android:id="@+id/btnMidterm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Midterm" />
+
+        <Button
+            android:id="@+id/btnMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Match 3 " />
+
+        <Button
             android:id="@+id/btnPassingIntents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,16 +56,11 @@
             android:text="Fragments" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnMenus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Match 3 " />
+            android:text="Menus" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Midterm" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
