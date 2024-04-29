@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Batch2">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnwan"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btntwa"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" "/>
+
+            <Button
+                android:id="@+id/btnthra"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnfra"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnfiva"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnsixa"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsvena"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnayta"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnnina"
+                android:layout_width="wrap_content"
+                android:layout_height="500px"
+                android:layout_weight="1"
+                android:text=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnReturn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Reset" />
+
+                <Button
+                    android:id="@+id/btnBackBatch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Return" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

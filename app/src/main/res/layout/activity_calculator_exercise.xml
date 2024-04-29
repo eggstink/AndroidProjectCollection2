@@ -49,7 +49,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn7"
+                android:id="@+id/btnsvena"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -57,7 +57,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn8"
+                android:id="@+id/btnayta"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -65,7 +65,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn9"
+                android:id="@+id/btnnina"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -87,7 +87,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn4"
+                android:id="@+id/btnfra"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -95,7 +95,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn5"
+                android:id="@+id/btnfiva"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -103,7 +103,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn6"
+                android:id="@+id/btnsixa"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -134,7 +134,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn2"
+                android:id="@+id/btntwa"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"
@@ -142,7 +142,7 @@
                 app:cornerRadius="100dp" />
 
             <Button
-                android:id="@+id/btn3"
+                android:id="@+id/btnthra"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_weight="1"

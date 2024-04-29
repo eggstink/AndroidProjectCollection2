@@ -5,7 +5,21 @@
         android:id="@+id/mItemChange"
         android:title="Change">
         <menu>
-            <item android:title="Item" />
+            <item
+                android:id="@+id/changeButtonVisibility"
+                android:title="changeButtonVisibility" />
+            <item
+                android:id="@+id/changeButtonPosition"
+                android:title="changeButtonPosition" />
+            <item
+                android:id="@+id/changeTextColor"
+                android:title="changeTextColor" />
+            <item
+                android:id="@+id/changeText"
+                android:title="changeText" />
+            <item
+                android:id="@+id/changeColor"
+                android:title="changeColor" />
         </menu>
     </item>
     <item

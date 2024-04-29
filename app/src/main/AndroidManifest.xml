@@ -12,6 +12,12 @@
         android:theme="@style/Theme.AndroidProjectCollection"
         tools:targetApi="31">
         <activity
+            android:name=".Batch2"
+            android:exported="false"/>
+        <activity
+            android:name=".opening_maps"
+            android:exported="false" />
+        <activity
             android:name=".MenuExercise"
             android:exported="false" />
         <activity

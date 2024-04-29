@@ -4,15 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuExercise">
-
-    <Button
-        android:id="@+id/btnTransformingButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#B62B2B"
-        android:rotation="-37"
-        android:rotationX="4"
-        android:rotationY="327" />
+    tools:context=".opening_maps">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

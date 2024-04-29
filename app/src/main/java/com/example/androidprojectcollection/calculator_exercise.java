@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Stack;
-
 
 public class calculator_exercise extends AppCompatActivity {
 
@@ -56,7 +54,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn2 = (Button)findViewById(R.id.btn2);
+        btn2 = (Button)findViewById(R.id.btntwa);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +69,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn3 = (Button)findViewById(R.id.btn3);
+        btn3 = (Button)findViewById(R.id.btnthra);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +84,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn4 = (Button)findViewById(R.id.btn4);
+        btn4 = (Button)findViewById(R.id.btnfra);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -101,7 +99,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn5 = (Button)findViewById(R.id.btn5);
+        btn5 = (Button)findViewById(R.id.btnfiva);
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -116,7 +114,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn6 = (Button)findViewById(R.id.btn6);
+        btn6 = (Button)findViewById(R.id.btnsixa);
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,7 +129,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn7 = (Button)findViewById(R.id.btn7);
+        btn7 = (Button)findViewById(R.id.btnsvena);
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -146,7 +144,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn8 = (Button)findViewById(R.id.btn8);
+        btn8 = (Button)findViewById(R.id.btnayta);
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -161,7 +159,7 @@ public class calculator_exercise extends AppCompatActivity {
             }
         });
 
-        btn9 = (Button)findViewById(R.id.btn9);
+        btn9 = (Button)findViewById(R.id.btnnina);
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
